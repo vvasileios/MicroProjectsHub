@@ -1,0 +1,41 @@
+body {
+  background-color: antiquewhite;
+}
+
+.main {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.clock {
+  font-size: xx-large;
+  display: flex;
+  gap: 30px;
+}
+
+#hour {
+  border: 2px solid black;
+  padding: 50px;
+}
+
+#minutes {
+  border: 2px solid black;
+  padding: 50px;
+}
+
+#seconds {
+  border: 2px solid black;
+  padding: 50px;
+}
+
+#date {
+  position: relative;
+  left: 38%;
+  margin-top: 50px;
+}
+
+#division {
+  margin-top: 50px;
+  font-size: xx-large;
+}
