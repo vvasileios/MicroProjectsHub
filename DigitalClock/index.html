@@ -5,34 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="index.js" defer></script>
+  <script src="script.js" defer></script>
   <title>Digital Clock</title>
 </head>
 
 <body>
-  <div class="main">
-    <div class="clock">
-      <div id="hour">
-        7
-      </div>
-      <div id="division">
-        :
-      </div>
-      <div id="minutes">
-        30
-      </div>
-      <div id="division">
-        :
-      </div>
-      <div id="seconds">
-        59
-      </div>
+  <div class="clock">
+    <div class="box hour" id="hour">00</div>
+    <div class="divider" id="divider">
+      :
     </div>
-
-    <div id="date">
-      January 9th 1995
+    <div class="box minute" id="minute">00</div>
+    <div class="divider" id="divider">
+      :
     </div>
+    <div class="box second" id="second">00</div>
   </div>
+  <div class="date" id="date">Jan 9th 1995</div>
 
 </body>
 

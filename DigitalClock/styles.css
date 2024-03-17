@@ -1,41 +1,41 @@
-body {
+body,
+html {
+  height: 100%;
   background-color: antiquewhite;
-}
-
-.main {
-  position: absolute;
-  top: 40%;
-  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
 .clock {
-  font-size: xx-large;
+  font-size: 48px;
   display: flex;
-  gap: 30px;
 }
 
-#hour {
-  border: 2px solid black;
-  padding: 50px;
-}
-
-#minutes {
-  border: 2px solid black;
-  padding: 50px;
-}
-
-#seconds {
-  border: 2px solid black;
-  padding: 50px;
-}
-
-#date {
+.box {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 5px;
   position: relative;
-  left: 38%;
-  margin-top: 50px;
+  overflow: hidden;
 }
 
-#division {
-  margin-top: 50px;
-  font-size: xx-large;
+.date,
+.divider {
+  margin: 20px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+  transition: transform 0.6s;
 }
