@@ -5,23 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <script type="text/javascript" src="script.js" defer></script>
   <title>Digital Clock</title>
 </head>
 
 <body>
-  <div class="clock">
-    <div class="box hour" id="hour">00</div>
-    <div class="divider" id="divider">
-      :
+  <div class="page">
+    <div id="clock">
+      <div class="circle" style="--color: #ff2972">
+        <div class="dots h_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="hh"></circle>
+        </svg>
+        <div id="hours">00</div>
+      </div>
+      <div class="circle" style="--color: #fee800">
+        <div class="dots m_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="mm"></circle>
+        </svg>
+        <div id="minutes">00</div>
+      </div>
+      <div class="circle" style="--color: #04fc43">
+        <div class="dots s_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="ss"></circle>
+        </svg>
+        <div id="seconds">00</div>
+      </div>
+      <div class="ap">
+        <div id="meridiem">AM</div>
+      </div>
     </div>
-    <div class="box minute" id="minute">00</div>
-    <div class="divider" id="divider">
-      :
-    </div>
-    <div class="box second" id="second">00</div>
   </div>
-  <div class="date" id="date">Mon Jan 01 1900</div>
 
 </body>
 
