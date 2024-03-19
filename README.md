@@ -11,7 +11,7 @@ MicroProjectsHub is designed as a playground for exploring new ideas, honing ski
 Below is a list of projects included in this repository, along with a brief description of each and technologies used:
 
 1. **Digital Clock**: The Digital Clock is a visually appealing representation of a digital clock(to me at least), showcasing the current time with smooth transitions between each second/minute/hour. *(Technologies: HTML, CSS, JavaScript)*
-2. ....
+2. **Table Search**: Table search, was created to test the functionality of adding and sorting table data in HTML with Vanilla JS through a search bar. *(Technologies: HTML, CSS, JavaScript)*
 
 Feel free to explore the projects, and don't hesitate to fork, star, or contribute!
 
