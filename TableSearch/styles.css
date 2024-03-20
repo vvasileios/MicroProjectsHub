@@ -4,17 +4,43 @@
   box-sizing: border-box;
 }
 
-.page {
-  width: 100%;
-  min-height: 100vh;
+body {
+  background-color: #343a40;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #343a40;
+  height: 100vh;
 }
 
 .container {
-  width: 70%;
-  height: 80vh;
+  overflow: auto;
+}
+
+table {
   border: 1px solid white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+thead {
+  border-bottom: 1px solid white;
+}
+
+tr {
+  border-bottom: 1px solid white;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+td {
+  border-right: 1px solid white;
 }
