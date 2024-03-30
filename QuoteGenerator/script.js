@@ -1,15 +1,18 @@
+import { localQuotes } from "./QuotesGen.js";
+
 const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
+const categoryText = document.getElementById("category");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 
 let apiQuotes = [];
 
-// function loading() {
-//   loader.hidden = false;
-//   quoteContainer.hidden = true;
-// }
+function loading() {
+  loader.hidden = false;
+  quoteContainer.hidden = true;
+}
 
 function complete() {
   quoteContainer.hidden = false;
@@ -33,18 +36,21 @@ function newQuote() {
     quoteText.classList.remove("long-quote");
   }
 
+  categoryText.textContent = quote.category;
   quoteText.textContent = quote.text;
   complete();
 }
 
 async function getQuotes() {
   loading();
+  const apiUrl = "";
   try {
-    const response = await fetch(apiUrl);
-    apiQuotes = await response.json();
+    // const response = await fetch(apiUrl);
+    // apiQuotes = await response.json();
+    apiQuotes = localQuotes;
     newQuote();
   } catch (error) {
-    // Catch Error Here
+    console.log(error);
   }
 }
 

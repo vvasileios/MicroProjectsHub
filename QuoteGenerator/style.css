@@ -46,6 +46,13 @@ body {
   font-style: italic;
 }
 
+.quote-category {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
 .button-container {
   margin-top: 15px;
   display: flex;
